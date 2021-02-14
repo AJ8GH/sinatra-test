@@ -2,6 +2,7 @@ require 'sinatra'
 require 'shotgun'
 
 get '/' do
+  @name = %w(Floofy Fred Llamarama).sample
   erb :index
 end
 
