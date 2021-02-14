@@ -2,7 +2,11 @@ require 'sinatra'
 require 'shotgun'
 
 get '/' do
-  'Hello World!'
+  "<h1>Hello World!</h1>
+  <h2>Image</h2>
+  <div>
+  <img src='https://a-z-animals.com/media/alpalca-2-400x300.jpg'>
+  </div>"
 end
 
 get '/secret' do
