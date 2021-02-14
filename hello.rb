@@ -18,6 +18,12 @@ get '/shotgun' do
   'It works!'
 end
 
+get '/hello' do
+  @visitor = params[:name]
+  @name = %w(Floofy Fred Llamarama).sample
+  erb :index
+end
+
 # shotgun - running program with shotgun didn't work
 # Think I bug fixed by going through stack trace and into the puma gem
 # ran:

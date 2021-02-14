@@ -1,6 +1,11 @@
 <h1>Hello World!</h1>
 <h2>Here's a llama</h2>
 <div style='border: 3px dashed red'>
-  <p>My name is <%= @name %></p>
+  <% if @visitor %>
+    <p>Hello, <%= @visitor %>!</p>
+  <% end %>
+  <% if @name %>
+    <p>My name is <%= @name %></p>
+  <% end %>
   <img src='https://a-z-animals.com/media/alpalca-2-400x300.jpg'>
 </div>
