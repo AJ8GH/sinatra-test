@@ -2,11 +2,7 @@ require 'sinatra'
 require 'shotgun'
 
 get '/' do
-  "<h1>Hello World!</h1>
-  <h2>Here's a llama</h2>
-  <div style='border: 3px dashed red'>
-  <img src='https://a-z-animals.com/media/alpalca-2-400x300.jpg'>
-  </div>"
+  erb :index
 end
 
 get '/secret' do
